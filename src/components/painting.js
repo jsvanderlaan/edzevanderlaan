@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import PreviewCompatibleImage from "./PreviewCompatibleImage"
+import PreviewCompatibleImage from "./previewCompatibleImage"
 
 const Painting = ({ title, image, description, date }) => (
   <div>
