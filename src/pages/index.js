@@ -1,25 +1,29 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Painting from "../components/painting"
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" />
-    <p>Deze site is in aanbouw :)</p>
-    <h1>Schilderijen</h1>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <Painting painting={node}></Painting>
-    ))}
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const paintings = data.allMarkdownRemark.edges.filter(
+    p => p.node.frontmatter.show
+  )
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {paintings.map(({ node }) => (
+        <Painting
+          key={node.id}
+          title={node.frontmatter.title}
+          image={node.frontmatter.image}
+          description={node.html}
+          date={node.frontmatter.date}
+        ></Painting>
+      ))}
+    </Layout>
+  )
+}
 
 export default IndexPage
 
@@ -31,8 +35,16 @@ export const pageQuery = graphql`
           html
           id
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD-MM-YYYY")
             title
+            show
+            image {
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

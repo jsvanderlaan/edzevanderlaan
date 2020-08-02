@@ -1,11 +1,8 @@
 ---
-title: "Hoi title"
-date: "2015-05-01T22:12:03.284Z"
+title: "Dit is de titel van een schilderij"
+date: 2015-05-01T22:12:03
+image: /img/penguin.jpg
+show: true
 ---
 
-### Hoi testtt
-
-1. Always buy dedicated Chemex filters.
-2. Use a scale, don’t try to eyeball it.
-3. Never skip preheating the glass.
-4. Timing is key, don’t forget the clock.
+Dit is een beschrijving in **[markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)** formaat.
