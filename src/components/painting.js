@@ -4,11 +4,11 @@ import PropTypes from "prop-types"
 const Painting = ({ painting }) => (
   <div key={painting.id}>
     <h1>{painting.frontmatter.title}</h1>
-    <p
+    <div
       dangerouslySetInnerHTML={{
         __html: painting.html,
       }}
-    ></p>
+    ></div>
   </div>
 )
 
