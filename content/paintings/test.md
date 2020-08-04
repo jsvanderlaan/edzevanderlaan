@@ -1,8 +1,7 @@
 ---
-title: "Dit is de titel van een schilderij"
-date: 2015-05-01T22:12:03
-image: /img/penguin.jpg
+title: Moeder Aarde
+date: 1999-12-31T23:00:00.000Z
+image: /img/img_20190616_145542267~2.jpg
 show: true
 ---
-
-Dit is een beschrijving in **[markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)** formaat.
+Acryl op papier, 70x70 cm.
