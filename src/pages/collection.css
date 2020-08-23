@@ -1,0 +1,7 @@
+.painting-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    [col-start] minmax(330px, 1fr) [col-end]
+  );
+}

@@ -12,14 +12,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "painting"
-    label: "Painting"
+  - name: "paintings"
+    label: "Collectie"
     folder: "content/paintings"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Datum", name: "date", widget: "date" }
+      - { label: "Jaar", name: "year", widget: "number" }
       - { label: "Beschrijving", name: "body", widget: "markdown" }
       - { label: "Afbeelding", name: "image", widget: image }
       - { label: "Weergeven op de pagina", name: "show", widget: "boolean" }
+
+  - name: "pages"
+    label: "Teksten op pagina's"
+    files:
+      - file: "content/pages/index.md"
+        label: "Over Edze"
+        name: "index"
+        fields:
+          - { label: "Tekst op de pagina", name: "body", widget: "markdown" }

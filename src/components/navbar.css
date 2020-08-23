@@ -1,0 +1,16 @@
+.navbar-item {
+  display: inline;
+  margin-right: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.navbar {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px white solid;
+}

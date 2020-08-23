@@ -1,0 +1,17 @@
+.markdown p {
+  display: flex;
+}
+
+p > img {
+  width: 300px;
+}
+
+.markdown img {
+  width: 300px;
+  margin: 0 1em;
+}
+
+.markdown {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,25 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 import PreviewCompatibleImage from "./previewCompatibleImage"
+import "./painting.css"
 
-const Painting = ({ title, image, description, date }) => (
-  <div>
-    <h2>{title}</h2>
-    <div>
-      <div
-        style={{
-          width: `300px`,
-          marginBottom: `1.45rem`,
+const Painting = ({ title, image, description, year }) =>
+  image && (
+    <div className="container">
+      <PreviewCompatibleImage
+        imageInfo={{
+          image: image,
+          alt: `image thumbnail for post ${title}`,
         }}
-      >
-        <PreviewCompatibleImage
-          imageInfo={{
-            image: image,
-            alt: `image thumbnail for post ${title}`,
-          }}
-        />
-        <small>{date}</small>
-      </div>
+      />
+      <h3>
+        {title} ({year})
+      </h3>
       {typeof description === "string" ? (
         <div
           dangerouslySetInnerHTML={{
@@ -30,15 +25,12 @@ const Painting = ({ title, image, description, date }) => (
         <div>{description}</div>
       )}
     </div>
-    <br />
-    <hr />
-  </div>
-)
+  )
 
 Painting.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   description: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
 }
 export default Painting
