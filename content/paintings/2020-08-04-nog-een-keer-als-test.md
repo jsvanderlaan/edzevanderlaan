@@ -1,8 +1,8 @@
 ---
-title: Nieuwe kerkstraat
+title: Oude kerkstraat
 year: 2020
 image: /img/oude-kerkstraat.jpg
 show: true
 ---
 
-Nieuwe Kerkstraat, Acrylverf op papier, 70x70 cm
+Oude Kerkstraat, Acrylverf op papier, 70x70 cm
