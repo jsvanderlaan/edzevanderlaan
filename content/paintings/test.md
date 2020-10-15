@@ -5,4 +5,4 @@ image: /img/korenveld.jpg
 show: true
 ---
 
-Korenveld, Sjaelland, Acryl op papier, 70x70 cm.
+Korenveld, Sjaelland, Acrylverf op papier, 70x70 cm.
