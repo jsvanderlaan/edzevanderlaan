@@ -12,17 +12,17 @@ const Painting = ({ title, image, description, year }) =>
           alt: `image thumbnail for post ${title}`,
         }}
       />
-      <h3>
-        {title} ({year})
-      </h3>
+      <div className="title">
+        {title}
+      </div>
       {typeof description === "string" ? (
-        <div
+        <div className="description"
           dangerouslySetInnerHTML={{
             __html: description,
           }}
         ></div>
       ) : (
-        <div>{description}</div>
+        <div className="description">{description}</div>
       )}
     </div>
   )

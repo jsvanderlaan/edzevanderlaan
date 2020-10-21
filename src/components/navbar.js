@@ -7,10 +7,10 @@ const Navbar = class extends React.Component {
     return (
       <nav className="navbar" role="navigation" aria-label="main-navigation">
         <Link activeClassName="active" className="navbar-item" to="/">
-          Over Edze
+          Portfolie
         </Link>
-        <Link activeClassName="active" className="navbar-item" to="/collection">
-          Collectie
+        <Link activeClassName="active" className="navbar-item" to="/over-edze">
+          Over Edze
         </Link>
       </nav>
     )

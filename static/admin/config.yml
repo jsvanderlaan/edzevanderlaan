@@ -27,8 +27,8 @@ collections:
   - name: "pages"
     label: "Teksten op pagina's"
     files:
-      - file: "content/pages/index.md"
+      - file: "content/pages/over-edze.md"
         label: "Over Edze"
-        name: "index"
+        name: "over-edze"
         fields:
           - { label: "Tekst op de pagina", name: "body", widget: "markdown" }

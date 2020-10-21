@@ -5,11 +5,9 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <h1>
       <Link className="title" to="/">
         {siteTitle}
       </Link>
-    </h1>
   </header>
 )
 

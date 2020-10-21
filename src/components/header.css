@@ -1,6 +1,7 @@
 .header {
-  margin-bottom: 1.45em;
-  border-bottom: 1px white solid;
+  background-image: url("../img/icon.jpg");
+  font-size: 1.8em;
+  padding: 2em 7% 0.5em 7%;
 }
 
 .title {
