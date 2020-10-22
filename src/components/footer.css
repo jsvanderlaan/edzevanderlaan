@@ -3,12 +3,12 @@
   margin: 0 7%;
 }
 
-.title {
-  font-size: 0.9em;
+.footer-title {
+  font-size: medium;
 }
 
-.text {
-  font-size: 0.8em;
+.footer-text {
+  font-size: small;
   font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
     Times New Roman, serif;
 }

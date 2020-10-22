@@ -4,12 +4,13 @@
 }
 
 .description {
-  font-size: 0.9em;
+  font-size: medium;
   font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
     Times New Roman, serif;
 }
 
 .title {
+  font-size: large;
   padding-top: 0.3em;
 }
 

@@ -20,11 +20,11 @@ const Footer = () => {
   `)
 
   const title = data.allMarkdownRemark.nodes[0].frontmatter.title
-  const titleJsx = title && <div className="title">{title}</div>
+  const titleJsx = title && <div className="footer-title">{title}</div>
 
   const text = data.allMarkdownRemark.nodes[0].html
   const textJsx = text && (
-    <div className="text">
+    <div className="footer-text">
       <Markdown html={text}></Markdown>
     </div>
   )
