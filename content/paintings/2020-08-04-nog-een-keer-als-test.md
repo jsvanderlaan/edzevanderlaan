@@ -4,5 +4,4 @@ year: 2020
 image: /img/oude-kerkstraat.jpg
 show: true
 ---
-
-Oude Kerkstraat, Acrylverf op papier, 70x70 cm
+Acrylverf op papier, 70x70 cm
