@@ -1,0 +1,12 @@
+.small-paintings {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-paintings > div {
+  margin-right: 0.5em;
+}
+
+.image {
+  margin-bottom: 1em;
+}

@@ -23,8 +23,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/pages`,
-        name: "pages",
+        path: `${__dirname}/content/over-edze`,
+        name: "over-edze",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/footer`,
+        name: "footer",
       },
     },
     `gatsby-transformer-sharp`,

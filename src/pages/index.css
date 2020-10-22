@@ -5,3 +5,7 @@
     [col-start] minmax(330px, 1fr) [col-end]
   );
 }
+.painting-grid-separator {
+  border-top: 1px solid white;
+  padding: 0.2em 0 1em 0;
+}

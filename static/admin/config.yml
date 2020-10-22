@@ -13,7 +13,7 @@ public_folder: /img
 
 collections:
   - name: "paintings"
-    label: "Collectie"
+    label: "Portfolio items"
     folder: "content/paintings"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -24,11 +24,38 @@ collections:
       - { label: "Afbeelding", name: "image", widget: image }
       - { label: "Weergeven op de pagina", name: "show", widget: "boolean" }
 
-  - name: "pages"
-    label: "Teksten op pagina's"
+  - name: "over-edze"
+    label: "Over Edze"
     files:
-      - file: "content/pages/over-edze.md"
-        label: "Over Edze"
-        name: "over-edze"
+      - file: "content/over-edze/image-big.md"
+        label: "Grote afbeelding"
+        name: "image-big"
         fields:
-          - { label: "Tekst op de pagina", name: "body", widget: "markdown" }
+          - { label: "Grote afbeelding (Over Edze)", name: "image", widget: "image" }
+      - file: "content/over-edze/p1.md"
+        label: "Eerste alinea"
+        name: "p1"
+        fields:
+          - { label: "Eerste alinea (Over Edze)", name: "body", widget: "markdown" }
+      - file: "content/over-edze/images-small.md"
+        label: "Drie kleine afbeeldingen"
+        name: "images-small"
+        fields:
+          - { label: "Eerste kleine afbeelding (Over Edze)", name: "image1", widget: "image" }
+          - { label: "Tweede kleine afbeelding (Over Edze)", name: "image2", widget: "image" }
+          - { label: "Derde kleine afbeelding (Over Edze)", name: "image3", widget: "image" }
+      - file: "content/over-edze/p2.md"
+        label: "Tweede alinea"
+        name: "p2"
+        fields:
+          - { label: "Tweede alinea (Over Edze)", name: "body", widget: "markdown" }
+
+  - name: "footer"
+    label: "Footer teksten"
+    files:
+      - file: "content/footer/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "Footer titel", name: "title", widget: "string" }
+          - { label: "Footer tekst", name: "body", widget: "markdown" }

@@ -1,12 +1,10 @@
 .navbar-item {
-  display: inline-block;
+  display: inline;
   margin-right: 1em;
   text-decoration: none;
   color: #6a6a6a;
   border: 1px solid #6a6a6a;
   padding: 0.3em 0.5em;
-  width: 70px;
-  text-align: center;
 }
 
 .active {

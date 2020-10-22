@@ -7,23 +7,47 @@ import Painting from "../components/painting"
 import "./index.css"
 
 const PortfolioPage = ({ data }) => {
-  const paintings = data.allMarkdownRemark.edges.filter(
-    p => p.node.frontmatter.show
-  )
+  const paintingData = data.allMarkdownRemark.edges
+    .filter(p => p.node.frontmatter.show)
+    .map(({ node }) => ({
+      key: node.id,
+      title: node.frontmatter.title,
+      image: node.frontmatter.image,
+      description: node.html,
+      year: node.frontmatter.year,
+    }))
+
+  const paintingsByYear = paintingData.reduce((acc, curr) => {
+    ;(acc[curr.year] = acc[curr.year] || []).push(curr)
+    return acc
+  }, [])
+
   return (
     <Layout>
       <SEO title="Portfolio" />
-      <div className="painting-grid">
-        {paintings.map(({ node }) => (
-          <Painting
-            key={node.id}
-            title={node.frontmatter.title}
-            image={node.frontmatter.image}
-            description={node.html}
-            year={node.frontmatter.year}
-          ></Painting>
-        ))}
-      </div>
+      {paintingsByYear
+        .map(
+          (paintingsForYear, year) =>
+            paintingsForYear && (
+              <div key={year}>
+                <div className="painting-grid-separator">{year}</div>
+                <div className="painting-grid">
+                  {paintingsForYear.map(
+                    ({ key, title, image, description, year }) => (
+                      <Painting
+                        key={key}
+                        title={title}
+                        image={image}
+                        description={description}
+                        year={year}
+                      ></Painting>
+                    )
+                  )}
+                </div>
+              </div>
+            )
+        )
+        .reverse()}
     </Layout>
   )
 }
