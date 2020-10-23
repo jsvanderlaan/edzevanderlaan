@@ -111,7 +111,9 @@ const IndexPage = () => {
           }}
         />
       </div>
-      <Markdown html={p2} />
+      <div className="p2">
+        <Markdown html={p2} />
+      </div>
     </Layout>
   )
 }
