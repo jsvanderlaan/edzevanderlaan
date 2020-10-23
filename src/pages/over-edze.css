@@ -1,12 +1,10 @@
 .small-paintings {
   display: flex;
   flex-wrap: wrap;
-}
-
-.small-paintings > div {
-  margin-right: 0.5em;
+  justify-content: space-between;
+  margin: 1em 0;
 }
 
 .image {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }

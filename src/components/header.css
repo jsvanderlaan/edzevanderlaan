@@ -1,10 +1,12 @@
 .header {
-  background-image: url("../img/icon.jpg");
-  font-size: 1.8em;
+  background-image: url("../img/18e47169-5e01-4ad3-af24-247975a9cd3e.jpg");
+  background-size: 100%;
+  background-position-y: 80%;
+  font-size: xx-large;
   padding: 2em 7% 0.5em 7%;
 }
 
-.title {
+.header-title {
   color: white;
   text-decoration: none;
 }

@@ -4,7 +4,7 @@ html {
 }
 body {
   margin: 0;
-  background: #292929;
+  background: white;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,9 @@ main {
 
 .site {
   margin: 0 auto;
+  background: #292929;
   max-width: 1200px;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   color: white;
+  height: max(100vh, 100%);
 }

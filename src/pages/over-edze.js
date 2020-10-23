@@ -32,7 +32,7 @@ const IndexPage = () => {
           frontmatter {
             image {
               childImageSharp {
-                fluid(maxWidth: 300, quality: 100) {
+                fluid(maxWidth: 700, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -47,21 +47,21 @@ const IndexPage = () => {
           frontmatter {
             image1 {
               childImageSharp {
-                fluid(maxWidth: 150, quality: 100) {
+                fluid(maxWidth: 350, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             image2 {
               childImageSharp {
-                fluid(maxWidth: 150, quality: 100) {
+                fluid(maxWidth: 350, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             image3 {
               childImageSharp {
-                fluid(maxWidth: 150, quality: 100) {
+                fluid(maxWidth: 350, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -71,13 +71,14 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
+
   const p1 = data.p1.nodes[0].html
   const p2 = data.p2.nodes[0].html
   const imageBig = data.imageBig.nodes[0].frontmatter.image
   const imagesSmall1 = data.imagesSmall.nodes[0].frontmatter.image1
   const imagesSmall2 = data.imagesSmall.nodes[0].frontmatter.image2
   const imagesSmall3 = data.imagesSmall.nodes[0].frontmatter.image3
+
   return (
     <Layout>
       <SEO title="Over Edze" />
@@ -85,6 +86,7 @@ const IndexPage = () => {
         <PreviewCompatibleImage
           imageInfo={{
             image: imageBig,
+            width: "min(100%, 700px)",
           }}
         />
       </div>
@@ -93,19 +95,19 @@ const IndexPage = () => {
         <PreviewCompatibleImage
           imageInfo={{
             image: imagesSmall1,
-            width: "min(30%, 150px)",
+            width: "32%",
           }}
         />
         <PreviewCompatibleImage
           imageInfo={{
             image: imagesSmall2,
-            width: "min(30%, 150px)",
+            width: "32%",
           }}
         />
         <PreviewCompatibleImage
           imageInfo={{
             image: imagesSmall3,
-            width: "min(30%, 150px)",
+            width: "32%",
           }}
         />
       </div>

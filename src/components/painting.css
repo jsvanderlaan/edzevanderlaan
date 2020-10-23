@@ -1,17 +1,18 @@
 .container {
-  width: 300px;
+  width: 100%;
   padding-bottom: 1em;
 }
 
 .description {
-  font-size: medium;
+  font-size: small;
   font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
     Times New Roman, serif;
 }
 
 .title {
   font-size: large;
-  padding-top: 0.3em;
+  padding-top: 0.7em;
+  font-weight: bold;
 }
 
 p {
