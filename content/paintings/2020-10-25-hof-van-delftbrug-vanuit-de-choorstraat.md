@@ -1,5 +1,5 @@
 ---
-title: Hof van Delftbrug, vanuit de Choorstraat
+title: Hof van Delftbrug, Choorstraat
 year: 2012
 image: /img/choorstraat.jpg
 show: true
