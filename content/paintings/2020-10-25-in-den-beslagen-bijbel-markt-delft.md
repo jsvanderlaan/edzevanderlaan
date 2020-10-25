@@ -1,5 +1,5 @@
 ---
-title: In den beslagen bijbel, Markt, Delft
+title: In den beslagen bijbel, Markt
 year: 2017
 image: /img/img_20180120_113431.jpg
 show: true
