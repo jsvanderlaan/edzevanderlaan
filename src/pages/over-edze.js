@@ -32,7 +32,7 @@ const IndexPage = () => {
           frontmatter {
             image {
               childImageSharp {
-                fluid(maxWidth: 700, quality: 100) {
+                fluid(maxWidth: 700, quality: 50) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -47,21 +47,21 @@ const IndexPage = () => {
           frontmatter {
             image1 {
               childImageSharp {
-                fluid(maxWidth: 350, quality: 100) {
+                fluid(maxWidth: 350, quality: 50) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             image2 {
               childImageSharp {
-                fluid(maxWidth: 350, quality: 100) {
+                fluid(maxWidth: 350, quality: 50) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
             image3 {
               childImageSharp {
-                fluid(maxWidth: 350, quality: 100) {
+                fluid(maxWidth: 350, quality: 50) {
                   ...GatsbyImageSharpFluid
                 }
               }
