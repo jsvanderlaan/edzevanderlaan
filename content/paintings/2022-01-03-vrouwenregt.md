@@ -1,6 +1,6 @@
 ---
 title: Vrouwenregt
-year: 2020
+year: 2021
 image: /img/vrouwenregt.png
 show: true
 ---
